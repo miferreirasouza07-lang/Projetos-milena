@@ -17,13 +17,19 @@ const [editandoPerfil, setEditandoPerfil] = useState(false);
 async function salvarPerfil() {
   if (!supabase) return;
 
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user) return;
+
   const { data, error } = await supabase
     .from("usuarios")
     .update({
       nome,
       email,
     })
-    .eq("id", 1)
+    .eq("auth_id", user.id)
     .select();
 
   console.log("DATA:", data);
@@ -34,17 +40,23 @@ async function salvarPerfil() {
     return;
   }
 
-alert("Perfil atualizado!");
-setEditandoPerfil(false);
+  alert("Perfil atualizado!");
+  setEditandoPerfil(false);
 }
 
 async function carregarPerfil() {
   if (!supabase) return;
 
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user) return;
+
   const { data, error } = await supabase
     .from("usuarios")
     .select("*")
-    .eq("id", 1)
+    .eq("auth_id", user.id)
     .single();
 
   if (error) {
@@ -55,11 +67,6 @@ async function carregarPerfil() {
   setNome(data.nome);
   setEmail(data.email);
 }
-
-useEffect(() => {
-  carregarPerfil();
-}, []);
-
   return (
     <header className="bg-white border-b h-20 flex items-center justify-between px-6">
       <img
