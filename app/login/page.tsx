@@ -17,22 +17,37 @@ const [senha, setSenha] = useState("");
 const router = useRouter();
 
 async function criarConta() {
-  if (!supabase) return;
+  try {
+    const response = await fetch("/api/criar-usuario", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        nome: nomeCadastro,
+        email: emailCadastro,
+        senha: senhaCadastro,
+      }),
+    });
 
-  const { data, error } = await supabase.auth.signUp({
-    email: emailCadastro,
-    password: senhaCadastro,
-  });
+    const data = await response.json();
 
-  console.log("DATA:", data);
-  console.log("ERROR:", error);
+    if (!response.ok) {
+      alert(data.error);
+      return;
+    }
 
-  if (error) {
-    alert(error.message);
-    return;
+    alert("Conta criada com sucesso!");
+
+    setCadastroAberto(false);
+    setNomeCadastro("");
+    setEmailCadastro("");
+    setSenhaCadastro("");
+
+  } catch (err) {
+    console.error(err);
+    alert("Erro ao criar conta.");
   }
-
-  alert("Conta criada com sucesso!");
 }
 
 async function fazerLogin() {
