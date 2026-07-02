@@ -23,15 +23,19 @@ async function salvarPerfil() {
 
   if (!user) return;
 
-  const { data, error } = await supabase
-    .from("usuarios")
-    .update({
-      nome,
-      email,
-    })
-    .eq("auth_id", user.id)
-    .select();
+const { data, error } = await supabase
+  .from("usuarios")
+  .update({
+    nome,
+    email,
+  })
+  .eq("auth_id", user.id)
+  .select()
+  .single();
 
+  console.log("Usuário autenticado:", user.id);
+console.log("Registro atualizado:", data);
+console.log("Erro:", error);
   console.log("DATA:", data);
   console.log("ERROR:", error);
 
@@ -51,7 +55,12 @@ async function carregarPerfil() {
     data: { user },
   } = await supabase.auth.getUser();
 
-  if (!user) return;
+  console.log("USER:", user);
+
+  if (!user) {
+    console.log("Usuário não encontrado");
+    return;
+  }
 
   const { data, error } = await supabase
     .from("usuarios")
@@ -59,14 +68,18 @@ async function carregarPerfil() {
     .eq("auth_id", user.id)
     .single();
 
-  if (error) {
-    console.log(error);
-    return;
-  }
+  console.log("DATA:", data);
+  console.log("ERROR:", error);
+
+  if (error) return;
 
   setNome(data.nome);
   setEmail(data.email);
 }
+
+useEffect(() => {
+  carregarPerfil();
+}, []);
   return (
     <header className="bg-white border-b h-20 flex items-center justify-between px-6">
       <img
