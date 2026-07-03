@@ -52,33 +52,42 @@ async function carregarPerfil() {
   if (!supabase) return;
 
   const {
-    data: { user },
-  } = await supabase.auth.getUser();
+    data: { session },
+  } = await supabase.auth.getSession();
 
-  console.log("USER:", user);
-
-  if (!user) {
-    console.log("Usuário não encontrado");
-    return;
-  }
+  if (!session) return;
 
   const { data, error } = await supabase
     .from("usuarios")
-    .select("*")
-    .eq("auth_id", user.id)
+    .select("nome, email")
+    .eq("auth_id", session.user.id)
     .single();
 
-  console.log("DATA:", data);
-  console.log("ERROR:", error);
-
-  if (error) return;
+  if (error) {
+    console.error(error);
+    return;
+  }
 
   setNome(data.nome);
   setEmail(data.email);
 }
 
 useEffect(() => {
+  if (!supabase) return;
+
   carregarPerfil();
+
+  const {
+    data: { subscription },
+  } = supabase.auth.onAuthStateChange((event) => {
+    if (event === "SIGNED_IN") {
+      carregarPerfil();
+    }
+  });
+
+  return () => {
+    subscription.unsubscribe();
+  };
 }, []);
   return (
     <header className="bg-white border-b h-20 flex items-center justify-between px-6">
@@ -110,9 +119,12 @@ useEffect(() => {
 
 
             <button
-  onClick={() => {
-    router.push("/login");
-  }}
+ onClick={async () => {
+  if (!supabase) return;
+
+  await supabase.auth.signOut();
+  router.push("/login");
+}}
   className="w-full text-left px-4 py-3 text-red-600 hover:bg-red-50"
 >
   Sair
