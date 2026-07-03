@@ -67,12 +67,7 @@ export default function Sidebar() {
           Estoque
         </Link>
 
-<Link
-  href="/usuarios"
-  className="block p-3 rounded-lg hover:bg-slate-800"
->
-  Usuários
-</Link>
+
 
       </nav>
     </aside>
