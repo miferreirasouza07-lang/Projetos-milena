@@ -18,10 +18,12 @@ export default function ProtegeRota({
       return;
     }
 
+    const client = supabase;
+
     async function verificarSessao() {
       const {
         data: { session },
-      } = await supabase.auth.getSession();
+      } = await client.auth.getSession();
 
       if (!session) {
         router.replace("/login");
@@ -35,7 +37,7 @@ export default function ProtegeRota({
 
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
+    } = client.auth.onAuthStateChange((_event, session) => {
       if (!session) {
         router.replace("/login");
       }
