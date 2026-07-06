@@ -94,7 +94,7 @@ Estudante de Análise e Desenvolvimento de Sistemas (UNIP)
 Foco em Desenvolvimento Web e Cibersegurança.
 
 LinkedIn:
-*(adicione aqui o link do seu LinkedIn)*
+www.linkedin.com/in/miferreira07
 
 GitHub:
 https://github.com/miferreirasouza07-lang
