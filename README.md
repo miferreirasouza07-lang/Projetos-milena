@@ -1,36 +1,131 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# RF Gestão
 
-First, run the development server:
+### Sistema de Gestão para Empresas de Ar-Condicionado
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Aplicação web desenvolvida para gerenciamento de clientes, agenda, orçamentos e ordens de serviço.
+
+[🌐 Acessar Projeto](https://projetos-milena.vercel.app)
+
+</div>
+
+---
+
+## 📖 Sobre o Projeto
+
+O **RF Gestão** é um sistema web desenvolvido para auxiliar empresas de prestação de serviços no gerenciamento de clientes, agenda, orçamentos e ordens de serviço.
+
+Este projeto faz parte do meu desenvolvimento acadêmico e profissional durante a graduação em **Análise e Desenvolvimento de Sistemas**, aplicando conceitos de desenvolvimento Full Stack, banco de dados e boas práticas de programação.
+
+---
+
+## ✨ Funcionalidades
+
+- ✅ Login de usuários
+- ✅ Dashboard
+- ✅ Cadastro de clientes
+- ✅ Agenda de serviços
+- ✅ Orçamentos
+- ✅ Ordens de Serviço
+- ✅ Banco de dados integrado ao Supabase
+- ✅ Interface responsiva
+
+---
+
+## 🚀 Tecnologias
+
+| Tecnologia | Utilização |
+|------------|------------|
+| Next.js | Framework Front-end |
+| React | Interface |
+| TypeScript | Linguagem |
+| Tailwind CSS | Estilização |
+| Supabase | Banco de Dados |
+| PostgreSQL | Banco Relacional |
+| Git | Versionamento |
+| GitHub | Repositório |
+
+---
+
+## 📂 Estrutura do Projeto
+
+```text
+📦 aplicativo
+📦 componentes
+📦 biblioteca
+📦 publico
+📄 package.json
+📄 README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 Como executar o projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git clone https://github.com/miferreirasouza07-lang/sistema-gestao-ar-condicionado.git
 
-## Learn More
+cd sistema-gestao-ar-condicionado
 
-To learn more about Next.js, take a look at the following resources:
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🎯 Objetivos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Este projeto tem como objetivo:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Desenvolver uma aplicação Full Stack moderna;
+- Aprimorar conhecimentos em Next.js e TypeScript;
+- Utilizar autenticação e banco de dados com Supabase;
+- Aplicar boas práticas de desenvolvimento;
+- Construir um portfólio profissional.
+
+---
+
+## 📚 Conhecimentos Aplicados
+
+- Desenvolvimento Front-end
+- Desenvolvimento Full Stack
+- Banco de Dados
+- Versionamento com Git
+- Responsividade
+- Componentização
+- Organização de Código
+- Integração com API
+- Autenticação
+
+---
+
+## 🚧 Status do Projeto
+
+> **Em desenvolvimento**
+
+Novas funcionalidades estão sendo implementadas continuamente.
+
+---
+
+## 👩‍💻 Desenvolvedora
+
+**Milena Ferreira de Souza**
+
+🎓 Estudante de Análise e Desenvolvimento de Sistemas — UNIP
+
+🎯 Interesse em Desenvolvimento Web e Cibersegurança.
+
+---
+
+## 🌐 Contato
+
+**LinkedIn**
+
+www.linkedin.com/in/miferreira07
+
+**GitHub**
+
+https://github.com/miferreirasouza07-lang
+
