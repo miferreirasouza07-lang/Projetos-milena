@@ -1,85 +1,109 @@
+<div align="center">
+
 # RF Gestão
 
-Sistema web desenvolvido para gerenciamento de clientes, agenda, orçamentos e ordens de serviço para empresas de prestação de serviços.
+### Sistema de Gestão para Empresas de Ar-Condicionado
 
-## 📋 Sobre o projeto
+Aplicação web desenvolvida para gerenciamento de clientes, agenda, orçamentos e ordens de serviço.
 
-O RF Gestão é uma aplicação web criada para facilitar o gerenciamento das atividades de uma empresa de ar-condicionado. O sistema permite organizar informações de clientes, controlar agendamentos, emitir orçamentos e acompanhar ordens de serviço em um único ambiente.
+[🌐 Acessar Projeto](https://projetos-milena.vercel.app)
 
-Este projeto está sendo desenvolvido como parte do meu aprendizado em Desenvolvimento Web e representa a aplicação prática dos conhecimentos adquiridos durante a graduação em Análise e Desenvolvimento de Sistemas.
-
----
-
-## 🚀 Tecnologias utilizadas
-
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- Supabase
-- PostgreSQL
-- HTML5
-- CSS3
+</div>
 
 ---
 
-## ⚙️ Funcionalidades
+## 📖 Sobre o Projeto
 
-- Login de usuários
-- Cadastro de clientes
-- Agenda de serviços
-- Controle de orçamentos
-- Ordens de serviço
-- Dashboard
-- Interface responsiva
-- Integração com banco de dados utilizando Supabase
+O **RF Gestão** é um sistema web desenvolvido para auxiliar empresas de prestação de serviços no gerenciamento de clientes, agenda, orçamentos e ordens de serviço.
+
+Este projeto faz parte do meu desenvolvimento acadêmico e profissional durante a graduação em **Análise e Desenvolvimento de Sistemas**, aplicando conceitos de desenvolvimento Full Stack, banco de dados e boas práticas de programação.
 
 ---
 
-## 🎯 Objetivo
+## ✨ Funcionalidades
 
-Desenvolver uma aplicação moderna para gerenciamento empresarial, aplicando conceitos de desenvolvimento Full Stack, banco de dados, autenticação de usuários e boas práticas de programação.
-
-Além disso, o projeto contribui para o desenvolvimento das minhas habilidades técnicas durante a graduação e fortalece meu portfólio profissional.
-
----
-
-## 📚 Conhecimentos aplicados
-
-- Desenvolvimento Front-end
-- Desenvolvimento Back-end
-- Banco de Dados
-- Autenticação de usuários
-- Componentização
-- Consumo de serviços
-- Versionamento com Git e GitHub
-- Responsividade
-- Organização de código
+- ✅ Login de usuários
+- ✅ Dashboard
+- ✅ Cadastro de clientes
+- ✅ Agenda de serviços
+- ✅ Orçamentos
+- ✅ Ordens de Serviço
+- ✅ Banco de dados integrado ao Supabase
+- ✅ Interface responsiva
 
 ---
 
-## 🖥️ Demonstração
+## 🚀 Tecnologias
 
-A aplicação está disponível em:
-
-**https://projetos-milena.vercel.app**
+| Tecnologia | Utilização |
+|------------|------------|
+| Next.js | Framework Front-end |
+| React | Interface |
+| TypeScript | Linguagem |
+| Tailwind CSS | Estilização |
+| Supabase | Banco de Dados |
+| PostgreSQL | Banco Relacional |
+| Git | Versionamento |
+| GitHub | Repositório |
 
 ---
 
-## 📂 Estrutura do projeto
+## 📂 Estrutura do Projeto
 
 ```text
-aplicativo/
-componentes/
-biblioteca/
-publico/
+📦 aplicativo
+📦 componentes
+📦 biblioteca
+📦 publico
+📄 package.json
+📄 README.md
 ```
 
 ---
 
-## 📈 Status do projeto
+## 💻 Como executar o projeto
 
-🚧 Em desenvolvimento
+```bash
+git clone https://github.com/miferreirasouza07-lang/sistema-gestao-ar-condicionado.git
+
+cd sistema-gestao-ar-condicionado
+
+npm install
+
+npm run dev
+```
+
+---
+
+## 🎯 Objetivos
+
+Este projeto tem como objetivo:
+
+- Desenvolver uma aplicação Full Stack moderna;
+- Aprimorar conhecimentos em Next.js e TypeScript;
+- Utilizar autenticação e banco de dados com Supabase;
+- Aplicar boas práticas de desenvolvimento;
+- Construir um portfólio profissional.
+
+---
+
+## 📚 Conhecimentos Aplicados
+
+- Desenvolvimento Front-end
+- Desenvolvimento Full Stack
+- Banco de Dados
+- Versionamento com Git
+- Responsividade
+- Componentização
+- Organização de Código
+- Integração com API
+- Autenticação
+
+---
+
+## 🚧 Status do Projeto
+
+> **Em desenvolvimento**
 
 Novas funcionalidades estão sendo implementadas continuamente.
 
@@ -89,12 +113,19 @@ Novas funcionalidades estão sendo implementadas continuamente.
 
 **Milena Ferreira de Souza**
 
-Estudante de Análise e Desenvolvimento de Sistemas (UNIP)
+🎓 Estudante de Análise e Desenvolvimento de Sistemas — UNIP
 
-Foco em Desenvolvimento Web e Cibersegurança.
+🎯 Interesse em Desenvolvimento Web e Cibersegurança.
 
-LinkedIn:
+---
+
+## 🌐 Contato
+
+**LinkedIn**
+
 www.linkedin.com/in/miferreira07
 
-GitHub:
+**GitHub**
+
 https://github.com/miferreirasouza07-lang
+
