@@ -169,13 +169,13 @@ function gerarPDF(os: OrdemServico) {
 pdf.setTextColor(80);
 
 pdf.text(
-  "(19) 99999-9999",
+  "(19) 99273-7769",
   140,
   20
 );
 
 pdf.text(
-  "contato@rfarcondicionado.com",
+  "rf_atendimento@outlook.com",
   140,
   28
 );
