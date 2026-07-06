@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RF Gestão
 
-## Getting Started
+Sistema web desenvolvido para gerenciamento de clientes, agenda, orçamentos e ordens de serviço para empresas de prestação de serviços.
 
-First, run the development server:
+## 📋 Sobre o projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+O RF Gestão é uma aplicação web criada para facilitar o gerenciamento das atividades de uma empresa de ar-condicionado. O sistema permite organizar informações de clientes, controlar agendamentos, emitir orçamentos e acompanhar ordens de serviço em um único ambiente.
+
+Este projeto está sendo desenvolvido como parte do meu aprendizado em Desenvolvimento Web e representa a aplicação prática dos conhecimentos adquiridos durante a graduação em Análise e Desenvolvimento de Sistemas.
+
+---
+
+## 🚀 Tecnologias utilizadas
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Supabase
+- PostgreSQL
+- HTML5
+- CSS3
+
+---
+
+## ⚙️ Funcionalidades
+
+- Login de usuários
+- Cadastro de clientes
+- Agenda de serviços
+- Controle de orçamentos
+- Ordens de serviço
+- Dashboard
+- Interface responsiva
+- Integração com banco de dados utilizando Supabase
+
+---
+
+## 🎯 Objetivo
+
+Desenvolver uma aplicação moderna para gerenciamento empresarial, aplicando conceitos de desenvolvimento Full Stack, banco de dados, autenticação de usuários e boas práticas de programação.
+
+Além disso, o projeto contribui para o desenvolvimento das minhas habilidades técnicas durante a graduação e fortalece meu portfólio profissional.
+
+---
+
+## 📚 Conhecimentos aplicados
+
+- Desenvolvimento Front-end
+- Desenvolvimento Back-end
+- Banco de Dados
+- Autenticação de usuários
+- Componentização
+- Consumo de serviços
+- Versionamento com Git e GitHub
+- Responsividade
+- Organização de código
+
+---
+
+## 🖥️ Demonstração
+
+A aplicação está disponível em:
+
+**https://projetos-milena.vercel.app**
+
+---
+
+## 📂 Estrutura do projeto
+
+```text
+aplicativo/
+componentes/
+biblioteca/
+publico/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📈 Status do projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🚧 Em desenvolvimento
 
-## Learn More
+Novas funcionalidades estão sendo implementadas continuamente.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 👩‍💻 Desenvolvedora
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Milena Ferreira de Souza**
 
-## Deploy on Vercel
+Estudante de Análise e Desenvolvimento de Sistemas (UNIP)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Foco em Desenvolvimento Web e Cibersegurança.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+LinkedIn:
+*(adicione aqui o link do seu LinkedIn)*
+
+GitHub:
+https://github.com/miferreirasouza07-lang
